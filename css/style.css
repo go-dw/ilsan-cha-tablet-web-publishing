@@ -528,7 +528,7 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 }
 .table_04 .row th.col-sm,
 .table_04 .row td.col-sm{
-	width: 20.83333%;
+	width: 20%;
 }
 /*ie용 bootstrap col 호환성 코드 & 반응형 colunm 너비 지정*/
 
