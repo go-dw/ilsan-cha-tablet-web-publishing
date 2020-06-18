@@ -21,7 +21,7 @@ main {
 /* login */
 #main {
 	height:100vh;
-	background:url('../images/bg_signin_bumin.png') center no-repeat;
+	background:url('../images/bg_signin_cha.png') center no-repeat;
 	background-size:cover;
 }
 .login_form {
@@ -48,7 +48,7 @@ main {
 	text-align:center;
  }
 .login_form .lf_wrap .login_logo {
-	width:35%;
+	width:67%;
 	margin: 4.3em auto 7.5em;
 }
 .login_form .lf_wrap .login_logo img {width:100%;}
@@ -113,7 +113,7 @@ main {
 	margin-left:1.5em;
 	line-height:60px;
 	font-size:1.3em;
-	color:#67af3e;
+	color:#00416b;
 }
 .login_form .lf_wrap button.login_cta {
 	width:80%;
@@ -122,7 +122,7 @@ main {
 	border:0;
 	border-radius:3em;
 	outline:none;
-	background:#67af3e;
+	background:#00416b;
 	font-size:1.9em;
 	font-weight: 700;
 	color:#ffffff;
@@ -130,8 +130,8 @@ main {
 .login_form .lf_wrap button.login_cta:hover,
 .login_form .lf_wrap button.login_cta:active {
 	background:#ffffff;
-	color:#67af3e;
-	border: 2px solid #67af3e;
+	color:#00416b;
+	border: 2px solid #00416b;
 }
 .login_form .lf_wrap .fg {float:left; width:430px; height:72px; margin-left:35px; margin-top:55px; border-top:1px solid rgba(255,255,255,0.5);}
 .login_form .lf_wrap .fg button.fg_btn {
@@ -156,8 +156,8 @@ main {
 	float:left;
 	width:100%;
 	height:7vh;
-	background:url(../images/bumin_seoul_logo.png) no-repeat #ffffff;
-	background-size: 59%;
+	background:url(../images/ilsan_cha_logo.png) no-repeat #ffffff;
+	background-size: 83%;
 	background-position:center center;
 }
 input.search {
@@ -189,15 +189,15 @@ input.search {
 	float:left;
 	width:25%;
 	max-width:320px;
-	background:#634c32;
+	background:#17436b;
 	height: 100vh;
 }
 .lnb .profile {
 	float:left;
 	width:100%;
 	height:94px;
-	border-bottom:1px solid #c5a761;
-	background-color: #574129;
+	border-bottom:1px solid #ffffff;
+	background-color: #0f4d83;
 }
 .lnb .profile .pr_txt {
 	float:left;
@@ -216,14 +216,14 @@ input.search {
 	display:block;
 	font-family:'notokr-light', sans-serif;
 	font-size:.9em;
-	color:rgba(255, 255, 255, 0.7);
+	color:rgba(255, 255, 255, 0.87);
 }
 .lnb .profile button.btn_logout {
 	float: right;
 	width: 15%;
 	border:0;
 	outline:none;
-	background-color: #574129;
+	background-color: #0f4d83;
 	box-sizing: content-box;
     padding: 0;
     margin: 0 auto;
@@ -261,19 +261,21 @@ input.search {
 	font-size:1.35em; 
 	color:#ffffff;
 	word-break: keep-all;
-	border-bottom: 1px solid #574129;
+	border-bottom: 1px solid #00416b;
 }
 .lnb .lnb_menu button.btn_lm_focus,
 .lnb .lnb_menu button.btn_lm:hover {
 	float:right;
 	width:100%;
-	padding-bottom: 1.3em;
+	padding-bottom: calc(1.3em + 1px);
 	padding-top: 1.3em;
 	padding-left:.9em;
 	border:0;
 	outline:none;
 	box-sizing:border-box;
-	background:#c5a761;
+	background:#4389bf;
+	border-left: 5px solid #99cfef;
+	z-index: 100;
 	text-align:left;
 	font-family:'notokr-regular', sans-serif;
 	font-weight: 600;
@@ -318,7 +320,7 @@ input.search {
 }
 .cont .tit_txt span{
 	font-family:'notokr-bold', sans-serif;
-	color: #58585a;
+	color: #13426b;
 	display:table-cell;
 	vertical-align: middle;
 }
@@ -363,8 +365,11 @@ tr.row{
 	border: none;
 }
 .table thead th span{
-	color: #58585a;
+	color: #13426b;
 	font-weight: 700;
+}
+.table thead th.column span{
+	color: #00416b;
 }
 .table tbody{
 	display: block;
@@ -389,21 +394,29 @@ table.table_cur tbody{
 }
 .table tbody td{
 	display: table;
+	table-layout: fixed;
 	text-align: center;
 	height: 3.3em;
 	border-top: none;
+}
+.table.table_wait tbody td,
+.table.table_receipt tbody td{
+	table-layout: fixed;
 }
 .table_01 thead tr{
 	border-bottom: 1px solid #e5e5e5;
 }
 table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
-	background-color: #fbf7f1;
+	background-color: #e7efff;
+}
+.table_01 thead .column:hover{
+	background-color: #e7efff;
 }
 .table_02 thead .column:hover{
-	background-color: #fbf7f1;
+	background-color: #e7efff;
 }
 .table_02 thead .column:hover{
-	background-color: #fbf7f1;
+	background-color: #e7efff;
 }
 .table span{
 	display: table-cell;
@@ -423,12 +436,12 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 }
 .thead_wrap .table_02 tr{
 	border-radius: .5em;
-	box-shadow: 0px .15em .3em 0 rgba(121, 191, 81, 0.39);
-	background-color: #79bf51;
+	box-shadow: 0px .15em .3em 0 rgba(121, 163, 220, 0.39);
+	background-color: #79a3dc;
 	font-size: 1.3em;
 	padding-left: .5em;
 	padding-right: .5em;
-	border-bottom: 1px solid #79bf51;
+	border-bottom: 1px solid #79a3dc;
 }
 .thead_wrap .table_02 tr span{
 	color: #fefeff;
@@ -530,7 +543,7 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 	font-size: .9em;
 }
 .table_03 tbody tr .column .active_chk{
-	background-color: #7bbf55;
+	background-color: #79a3dc;
 	-webkit-box-shadow: none;
     -moz-box-shadow:    none;
     box-shadow:         none;
@@ -566,7 +579,8 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 	padding-left: 1em;
 	width: 1%;
 	font-weight: bold;
-	border-left: 5px solid #58585a;
+	color: #13426b;
+	border-left: 5px solid #13426b;
 	word-break: keep-all;
 	white-space: nowrap;
 }
@@ -575,7 +589,8 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 	width: 1%;
 	white-space: nowrap;
 	font-weight: bold;
-	border-left: 5px solid #58585a;
+	border-left: 5px solid #13426b;
+	color: #13426b;
 }
 .table_03 thead .row .title span.state{
 	text-align: left;
@@ -614,7 +629,7 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 	text-align: right;
 }
 .table_03 thead .row span.active{
-	color: #67af3e;
+	color: #79a3dc;
 }
 .table_04 .ck_box{
 	display: table-cell;
@@ -707,7 +722,7 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
 	height: 3.5em;
 	color:#ffffff;
 	outline:none;
-	background-color: #336919;
+	background-color: #00416b;
 	border:0;
 	word-break: keep-all;
 	padding: 0;
@@ -720,7 +735,7 @@ table.table_01 tbody tr:hover,table.table_02 tbody tr:hover{
     box-sizing: content-box;
 }
 .toggle_wrap .toggle_group button.active{
-	background-color: #79bf51;
+	background-color: #79a3dc;
 }
 
 .table .w-100{
@@ -845,7 +860,7 @@ div.col_none{
     border: 0;
     border-radius: 3em;
     outline: none;
-    background: #67af3e;
+    background: #00416b;
     font-size: 1.9em;
     font-weight: 700;
     color: #ffffff;
@@ -853,8 +868,8 @@ div.col_none{
 .arr_popup .arr_yes:hover,
 .arr_popup .arr_yes:active {
 	background:#ffffff;
-	color:#67af3e;
-	border: 2px solid #67af3e;
+	color:#00416b;
+	border: 2px solid #00416b;
 }
 
 /* list checkbox radio btn img */
@@ -878,7 +893,7 @@ div.col_none{
 
 @media (max-width: 1300px) {
 	.logo {
-		background-size: 70%;
+		background-size: 93%;
 	}
 	.table{
 		font-size: 1.3em;
@@ -962,7 +977,7 @@ div.col_none{
 }
 @media (max-width: 1070px) {
 	.logo {
-		background-size: 73%;
+		background-size: 100%;
 	}
 	.table_02{
 		font-size: .93em;
@@ -1075,7 +1090,7 @@ div.col_none{
 	}
 	.logo {
 		height:8vh;
-		background-size: 53%;
+		background-size: 79%;
 	}
 	.cont .tit_txt{
 		height:8vh;
@@ -1262,7 +1277,7 @@ div.col_none{
 	}
 	.logo {
 		/*background:url(../images/lnb_logo_s.png) no-repeat #ffffff;*/
-		background-size: 59%;
+		background-size: 77%;
 		background-position:center center;
 	}
 }
@@ -1275,7 +1290,7 @@ div.col_none{
 	}
 	.logo {
 		height:9vh;
-		background-size: 63%;
+		background-size: 93%;
 	}
 	.cont .tit_txt{
 		font-size: 1.7em;
@@ -1402,7 +1417,7 @@ div.col_none{
 		height: calc( (85.7vh - 3em - 6px) / 2 );
 	}
 	.table_02 tbody tr:nth-child(2n){
-		background-color: #fdfaf7;
+		background-color: #f7faff;
 	}
 	.table_03 tbody{
 		height: calc( (85.7vh - 7em - 6px) / 2 );
@@ -1431,7 +1446,7 @@ div.col_none{
 		font-size: .93em;
 	}
 	.table_04 tbody tr:nth-child(2n){
-		background-color: #fdfaf7;
+		background-color: #f7faff;
 	}
 	.toggle_wrap .toggle_group button{
 		height: 2.3em;
